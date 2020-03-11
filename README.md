@@ -1,8 +1,4 @@
-# EOTD-PHP-APP-DOCKER-CONTAINER
-
-I recently published a blog post on 4sysops.com about Web App for Containers on Azure here: https://4sysops.com/archives/web-app-for-containers-on-azure. That blog post is about the often-overlooked service in Azure that can be used to host a container/s on a web app in Azure App service.
-
-This is a great service if you just need to run a single container or even a couple of containers that you have in Docker Compose. This service is PaaS and abstracts away an orchestration system like Kubernetes. If you need insight into the Azure App Service Web App for Containers service check out the blog post on 4sysops.
+# Excerpt from my blog post "BUILD & RELEASE A CONTAINER IMAGE FROM AZURE DEVOPS TO AZURE WEB APP FOR CONTAINERS" - http://www.buchatech.com/2020/03/build-release-a-container-image-from-azure-devops-to-azure-web-app-for-containers/
 
 In this long blog post I am going to take things a step further and walk-through the build & release of a Container from Azure DevOps to Azure Web App for Containers. The overall goal of this post is to help someone else out if they want to setup a build and release pipeline for building and deploying a container to Azure App Service. We will use a very simple PHP web app I built that will run in the container.
 
