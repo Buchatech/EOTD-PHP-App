@@ -28,7 +28,7 @@ spec:
     spec:
       containers:
       - name: eotd   
-        image: buchatech/eotd:latest
+        image: buchatech/eotd:188
         imagePullPolicy: Always
         ports:
         - containerPort: 80
