@@ -1,0 +1,19 @@
+apiVersion : apps/v1
+kind: Deployment
+metadata:
+  name: "test05068723-f45f"
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: "test05068723-f45f"
+  template:
+    metadata:
+      labels:
+        app: "test05068723-f45f"
+    spec:
+      containers:
+        - name: "test05068723-f45f"
+          image: "eotdtestcr.azurecr.io/test05068723"
+          ports:
+          - containerPort: 80
