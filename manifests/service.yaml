@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: eotd-41223-run1
+  namespace: eotd-41223-run1-ns
+spec:
+  type: LoadBalancer
+  selector:
+    app: eotd-41223-run1
+  ports:
+    - protocol: TCP
+      port: 8080
+      targetPort: 8080
