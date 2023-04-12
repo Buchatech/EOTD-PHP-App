@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: eotd-41223-run1
+  labels:
+    app: eotd-41223-run1
+  namespace: eotd-41223-run1-ns
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: eotd-41223-run1
+  template:
+    metadata:
+      labels:
+        app: eotd-41223-run1
+    spec:
+      containers:
+        - name: eotd-41223-run1
+          image: jokesapiv241023run2arc.azurecr.io/eotd-41223-run1:latest
+          ports:
+            - containerPort: 8080
